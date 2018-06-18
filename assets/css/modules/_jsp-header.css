@@ -1,0 +1,20 @@
+.jsp-header {
+  margin: 0;
+  padding: 0;
+  background-image: url('../images/128-181.jpg');
+  background-repeat: repeat;
+}
+
+.jsp-header__easy-contact-info {
+  padding: 1.5rem 2.5rem 0.5rem;
+  font-size: 0.8rem;
+  margin: 0;
+  overflow: hidden;
+}
+
+.jsp-header__easy-contact-info h2 {
+  margin: 0;
+  color: #eec642;
+  opacity: 0.9;
+  float: right;
+}

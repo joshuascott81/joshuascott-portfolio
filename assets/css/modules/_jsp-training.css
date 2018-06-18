@@ -1,0 +1,147 @@
+.jsp-training {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.jsp-training h2 {
+  flex-basis: 100%;
+  text-align: left;
+  padding-left: 1rem;
+  text-shadow: 1px 1px 1px rgb(216, 216, 216);
+  font-size: 2rem;
+  display: inline;
+}
+
+.jsp-training h3 {
+  flex-basis: 100%;
+  text-align: left;
+  padding-left: 1.5rem;
+  text-shadow: 1px 1px 1px rgb(216, 216, 216);
+  font-size: 1.1rem;
+  display: inline;
+}
+
+.jsp-training__card {
+  background-color: rgb(250, 249, 245);
+  padding: 0;
+  margin: 1rem 0;
+  box-shadow: 1px 1px 5px 0;
+  /* flex: 1; */
+  /* flex-basis: 20%; */
+  /* flex-grow: 1;
+  flex-shrink: 1; */
+  flex-basis: 49%;
+}
+
+.jsp-training__tutorials {
+  display: flex;
+  flex-flow: row wrap;
+  /* justify-content: space-between; */
+  padding: 0 1rem 1rem 1rem;
+}
+
+.jsp-training__logo-circle {
+  background-color: white;
+  /* margin: auto; */
+  flex-basis: 10%;
+  /* flex: 0 0 15%; */
+  border-radius: 50%;
+  padding-top: 10%;
+  margin-right: 0.2rem;
+  /* margin: calc(10% / 12); */
+
+  position: relative;
+  /* transform: translateY(-50%); */
+  /* margin-bottom: -23%; */
+  overflow: hidden;
+  /* border: 1px solid rgb(10, 7, 58); */
+  box-shadow: 1px 1px 5px 0;
+}
+
+.jsp-training__logo_1 {
+  width: 80%;
+  height: 100%;
+  object-fit: scale-down;
+  position: absolute;
+  background-color: white;
+  display: block;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-100%);
+}
+
+.jsp-training__logo_2 {
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  background-color: white;
+  display: block;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-100%);
+}
+
+.jsp-training__logo_3 {
+  width: 60%;
+  height: 100%;
+  object-fit: scale-down;
+  position: absolute;
+  background-color: white;
+  display: block;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-100%);
+}
+
+.jsp-training__info-box {
+  /* padding: 1rem; */
+}
+
+.jsp-training__tutorial-title {
+  padding: 1.5rem 2rem;
+  margin: 0 0;
+  font-size: 1.5rem;
+}
+
+.jsp-training__tutorial-each {
+  margin: 1rem;
+  box-shadow: 1px 1px 5px 0;
+  border-radius: 0 0 5px 5px;
+}
+
+.jsp-training__tutorial-header {
+  background-color: rgb(80, 72, 46);
+  color: white;
+  padding: 0.5rem 2rem;
+  margin: 0 0;
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+
+.jsp-training__tutorial-body {
+  padding: 0.5rem 1rem 0.5rem 3rem;
+  margin: 0 0;
+  font-size: 1rem;
+}
+
+.jsp-training__info-box ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.jsp-training__info-box ul li {
+  /* background-color: white;
+  opacity: 0.2; */
+  /* padding: 0.5rem 2rem;
+  margin: 0 0; */
+}

@@ -1,0 +1,20 @@
+.jsp-education {
+  width: 60%;
+  margin: auto;
+  padding: 1rem;
+}
+
+.jsp-education h2 {
+  text-align: left;
+  padding-left: 1rem;
+  text-shadow: 1px 1px 1px rgb(216, 216, 216);
+  font-size: 2rem;
+}
+
+.jsp-education__body {
+  text-align: left;
+  text-shadow: 1px 1px 1px rgb(216, 216, 216);
+  font-size: 1.2rem;
+  padding: 1rem;
+  box-shadow: 1px 1px 5px 0;
+}

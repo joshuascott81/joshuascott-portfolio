@@ -1,0 +1,148 @@
+<% include ./partials/_header %>
+    <div class="jsp-header">
+        <div class="jsp-header__easy-contact-info">
+            <h2>Joshua Scott - (830) 305-5533 - joshuascott81@gmail.com</h2>
+        </div>
+
+        <% include ./partials/_navbar %>
+
+    </div>
+    <div class="jsp-welcome">
+        <div class="jsp-welcome__box">
+            <img src="./images/JoshuaScott.png" alt="">
+            <h1>Hello, I'm Joshua Scott.</h1>
+            <h2>I'm a self-taught junior full-stack developer.</h2>
+        </div>
+
+    </div>
+
+    <div class="jsp-mystory" id="mystory">
+        <h2>My Story</h2>
+        <p>
+            I have a video production background, but wanted a new direction with my career. I tried a year of CS at Texas State University,
+            but had to withdraw due to financial reasons. I was bummed and dug back into video production for the next year
+            or so after that. Then that feeling that I needed to change direction came again.
+        </p>
+        <p>
+            I started to do online courses in CS for a few months. Eventually, I realized I really liked javascript and web development.
+            I've spent the last 7 months working through full stack tutorials. I'm really proud of where I am now. I'm comfortable
+            in the code. I'm comfortable problem sovling apps. I enjoy the feeling of seeing the hard work pay off in seeing
+            a functional app come together.
+        </p>
+        <p>
+            I think in the beginning of this self-taught journey, I thought there was a destination. One day I would know enough and
+            I'd be ready to work. Now I realize the journey of learning is the destination.
+        </p>
+    </div>
+
+    <div class="jsp-projects" id="projects">
+        <h2>Projects</h2>
+        <h3>I've put all my heart and soul into this site. It's functional, but still a ways to being complete. I wanted to build
+            this site to collect all of my friend's movie reviews. He's now able to create, update and delete reviews. I
+            got to play around with connecting to the OMDD API to retrieve additional information for a review.</h3>
+        <div class="jsp-projects__card">
+            <img src="./images/ck-reviews-snapshots/ck-reviews-home.png" alt="">
+
+        </div>
+        <div class="jsp-projects__card">
+            <img src="./images/ck-reviews-snapshots/ck-reviews-new.png" alt="">
+        </div>
+        <div class="jsp-projects__card">
+            <img src="./images/ck-reviews-snapshots/ck-reviews-show.png" alt="">
+        </div>
+    </div>
+
+
+
+    <div class="jsp-training" id="training">
+        <h2>Training</h2>
+        <h3>Here are the tutorials I've been using to learn how to develope full stack apps.</h3>
+        <% for(let i = 0; i < tutorials.length; i++) { %>
+            <div class="jsp-training__card">
+
+                <div class="jsp-training__info-box">
+                    <ul>
+                        <div class="jsp-training__tutorial-each">
+                            <li class="jsp-training__tutorial-header">Name</li>
+                            <li class="jsp-training__tutorial-body">
+                                <%= tutorials[i].tutorial.title %>
+                            </li>
+                            <li class="jsp-training__tutorial-header">Instructor</li>
+                            <li class="jsp-training__tutorial-body">
+                                <%= tutorials[i].tutorial.instructor %>
+                            </li>
+                        </div>
+
+                    </ul>
+
+                    <div class="jsp-training__tutorials">
+
+                        <% for (let j = 0; j < tutorials[i].logos.length; j++) { %>
+                            <div class="jsp-training__logo-circle">
+                                <img class="jsp-training__logo_<%= tutorials[i].logos[j].adjustment %>" src="<%= tutorials[i].logos[j].url %>" alt="">
+                            </div>
+                            <% } %>
+                    </div>
+                </div>
+
+
+            </div>
+            <% } %>
+    </div>
+
+    <div class="jsp-education" id="education" style="margin-bottom: 500px">
+        <h2>Education</h2>
+
+        <div class="jsp-education__body">
+            <ul>
+                <ul>
+                    <li>
+                        <h3>Texas Lutheran University - Bachelor of Arts in Communication Studies</h3>
+                    </li>
+                    <ul>
+                        <li>
+                            <h4>Graduated December 2005</h4>
+                        </li>
+                    </ul>
+                </ul>
+                <ul>
+                    <li>
+                        <h3>Texas State University - Certificate in Computer Science</h3>
+                    </li>
+                    <ul>
+                        <li>
+                            <h4>1st Year - Spring 2015 - Summer 2016 - Completed</h4>
+                        </li>
+                        <li>
+                            <h4>2nd Year - Spring 2016 - Withdrew Admission</h4>
+
+                        </li>
+                    </ul>
+                </ul>
+                <ul>
+                    <li>
+                        <h3>Self Study in Computer Science with EDX and Coursera</h3>
+                    </li>
+                    <ul>
+                        <li>
+                            <h4>July 2017 - December 2017</h4>
+                        </li>
+                    </ul>
+                </ul>
+                <ul>
+                    <li>
+                        <h3>Self Study in Full Stack Developement</h3>
+                    </li>
+                    <ul>
+                        <li>
+                            <h4>January 2018 - present</h4>
+                        </li>
+                    </ul>
+                </ul>
+            </ul>
+
+        </div>
+    </div>
+
+
+    <% include ./partials/_footer %>
