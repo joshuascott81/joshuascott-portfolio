@@ -24,6 +24,10 @@
   box-shadow: 1px 1px 1px rgb(216, 216, 216);
 }
 
+.jsp-welcome__box img:hover {
+  opacity: 0.8;
+}
+
 .jsp-welcome__box h1 {
   text-align: center;
   text-shadow: 1px 1px 1px rgb(216, 216, 216);
