@@ -218,6 +218,10 @@ app.get('/', (req, res) => {
   });
 });
 
+app.get('/resume', (req, res) => {
+  res.render('resume');
+});
+
 let port = process.env.PORT || 5000;
 
 app.listen(port, () => {
